@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, PopoverController } from 'ionic-angular';
 import {HomePage} from '../../pages/home/home';
 
 /**
@@ -19,7 +19,8 @@ export class BotonesPage {
 
   constructor(public navCtrl: NavController, 
     public navParams: NavParams,
-    public alertCtrl: AlertController
+    public alertCtrl: AlertController,
+    public popoverCtrl: PopoverController
   ) {
     console.log('constructor BotonesPage');
     this.color='rosa';
